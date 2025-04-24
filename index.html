@@ -14,12 +14,17 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/main.css" />
 
+    <script
+      src="https://kit.fontawesome.com/945603a62f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Sloth Ui</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav class="navbar flex">
+      <nav class="navbar container flex">
         <!-- logo -->
         <div class="flex logo">
           <div>
@@ -28,7 +33,7 @@
           <p class="sloth">slothui</p>
         </div>
         <!-- nav item -->
-        <ul class="flex nav-items">
+        <ul class="nav-items">
           <li>
             <a>Features</a>
           </li>
@@ -37,12 +42,76 @@
           <li><a>Achivements</a></li>
         </ul>
         <!-- Auth Buttons -->
-        <div class="flex button-group">
+        <div class="nav-btn button-group">
           <button class="btn-primary">Sign Up</button>
           <button class="btn-secondary">Sign In</button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <img src="./assets/menu.png" alt="menu icon" />
+        </div>
       </nav>
     </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="section-intro">Design System For Gen Z</p>
+            <h1 class="hero-title">Unleash Your Inner Design Sloth Today.</h1>
+            <p class="hero-description">
+              Sloth UI is a modern design system tailored for the next
+              generation of creators. Simplify your workflow and bring your
+              ideas to life effortlessly.
+            </p>
+            <!-- Download buttons -->
+            <div class="flex">
+              <div class="flex apple-btn">
+                <i class="fa-brands fa-apple"></i>
+                <div class="btn-text">
+                  <p>Download On The</p>
+                  <h3>App Store</h3>
+                </div>
+              </div>
+              <div class="flex google-btn">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="btn-text">
+                  <p>Download On The</p>
+                  <h3>Google Play</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hero images -->
+          <div class="flex hero-images">
+            <div class="">
+              <picture>
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/mobile-banner1.png"
+                />
+                <!-- Desktop-->
+                <img src="./assets/banner1.png" alt="banner stats" />
+              </picture>
+            </div>
+            <div class="top-image">
+              <picture>
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/mobile-banner2.png"
+                />
+                <!-- Desktop-->
+                <img src="./assets/banner2.png" alt="banner stats" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="js/script.js"></script>
   </body>

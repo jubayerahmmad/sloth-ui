@@ -1,0 +1,73 @@
+.hero {
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(95, 88, 237, 1) 0%,
+    rgba(211, 209, 232, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 60px 160px;
+}
+.hero-title {
+  font-size: 64px;
+}
+.hero-description {
+  color: #475569;
+}
+
+.apple-btn,
+.google-btn {
+  background-color: #000;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.apple-btn:hover,
+.google-btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.apple-btn i,
+.google-btn i {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.btn-text p {
+  font-size: 0.7em;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.btn-text h3 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 500;
+}
+.hero-images {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 60px;
+  /* border: 2px solid red; */
+}
+.top-image {
+  position: absolute;
+  right: 30px;
+  bottom: -10px;
+}
