@@ -1,0 +1,30 @@
+.main-features {
+  padding: 50px 5px;
+}
+
+.card-container {
+  padding: 35px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-content p {
+  margin: 10px 0;
+}
+
+.card {
+  padding: 10px 14px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid gray; */
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
