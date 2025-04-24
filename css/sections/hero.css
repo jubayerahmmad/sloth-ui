@@ -71,3 +71,30 @@
   right: 30px;
   bottom: -10px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 20px 10px;
+  }
+  .hero-title {
+    font-size: 32px;
+  }
+  .apple-btn i,
+  .google-btn i {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  .btn-text p {
+    font-size: 0.5em;
+  }
+  .btn-text h3 {
+    font-size: 1em;
+  }
+  .hero-images {
+    padding: 5px 0px;
+  }
+  .top-image {
+    right: 0px;
+    bottom: 100px;
+  }
+}
