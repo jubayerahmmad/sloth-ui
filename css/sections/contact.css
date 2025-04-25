@@ -2,6 +2,31 @@
   padding: 35px 10px;
 }
 
+.contact-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.contact-card {
+  border: 1px solid gainsboro;
+  padding: 25px;
+  border-radius: 20px;
+}
+
 .contact-card i {
   color: #4f46e5;
+  font-size: 24px;
+}
+
+.location h1 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-card-container {
+    flex-direction: column;
+  }
 }

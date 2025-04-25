@@ -1,5 +1,5 @@
 .sub-features {
-  padding: 50px 10px;
+  padding: 35px 10px;
   background-color: #fff;
 }
 .sub-features .main-content {
@@ -8,11 +8,15 @@
 }
 .text-content {
   width: 50%;
+  padding: 6px 12px;
 }
 .text-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #0f172a;
+}
+.heading {
+  padding: 5px 10px;
 }
 .heading h2 {
   margin: 20px 0;
