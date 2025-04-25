@@ -46,13 +46,13 @@ body {
   background-color: white;
   color: #4f46e5;
   border-radius: 20px;
-  border: 1px solid gray;
+  border: 1px solid #4f46e5;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
 }
 .button-group {
-  gap: 10px;
+  gap: 20px;
 }
 
 .section-intro {

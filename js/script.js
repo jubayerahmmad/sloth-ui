@@ -83,7 +83,7 @@ const createRatingStars = (rating) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 !== 0;
   const stars = [];
-  console.log(stars);
+  // console.log(stars);
 
   for (let i = 0; i < 5; i++) {
     if (i < fullStars) {
@@ -130,4 +130,14 @@ const createTestimonialCard = ({
 
 testimonialData.forEach((testimonial) => {
   cardContainer.appendChild(createTestimonialCard(testimonial));
+});
+
+// Top Button Funtionality
+const scrollToTopButton = document.getElementById("scroll-to-top");
+
+scrollToTopButton.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
