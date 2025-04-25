@@ -76,7 +76,36 @@ const testimonialData = [
   },
 ];
 
+const faqData = [
+  {
+    question: "What is Sloth UI?",
+    answer:
+      "Sloth UI is a modern, lightweight component library for building user interfaces. It provides ready-to-use components with a focus on performance and accessibility.",
+  },
+  {
+    question: "Is Sloth UI free to use?",
+    answer:
+      "Yes, Sloth UI is open-source and free to use in both personal and commercial projects under the MIT license.",
+  },
+  {
+    question: "Do I need to know React to use Sloth UI?",
+    answer:
+      "No, Sloth UI is framework-agnostic and can be used with plain JavaScript or any front-end framework of your choice.",
+  },
+  {
+    question: "How do I get support?",
+    answer:
+      "You can get support through our documentation, community forums, and GitHub issues. Premium support is available for enterprise customers.",
+  },
+  {
+    question: "Can I customize the components?",
+    answer:
+      "Yes, all components are highly customizable through CSS variables and configuration options. You can easily adapt them to match your brand.",
+  },
+];
+
 const cardContainer = document.getElementById("testimonial-card-container");
+const faqContainer = document.getElementById("faq-container");
 
 // Create rating stars
 const createRatingStars = (rating) => {
@@ -139,5 +168,47 @@ scrollToTopButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
+  });
+});
+
+// Creating Faq Item
+const createFaqItem = ({ question, answer }) => {
+  const div = document.createElement("div");
+  div.classList.add("faq-item");
+  div.innerHTML = `
+          <div class="question flex">
+                <div class="flex">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <h1>${question}</h1>
+                </div>
+                <button class="arrow-btn">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+
+              <div class="answer hidden">
+                <p>
+                 ${answer}
+                </p>
+          </div>
+    `;
+  return div;
+};
+
+faqData.forEach((faqItem) => {
+  faqContainer.appendChild(createFaqItem(faqItem));
+});
+
+// Arrow button and Answer Expanding Funcs
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const arrowBtn = item.querySelector(".arrow-btn");
+  const arrowIcon = arrowBtn.querySelector("i");
+  const answer = item.querySelector(".answer");
+
+  arrowBtn.addEventListener("click", () => {
+    arrowIcon.classList.toggle("rotate-arrow-button");
+    answer.classList.toggle("hidden");
   });
 });
