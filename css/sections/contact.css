@@ -1,4 +1,7 @@
-.helo {
-  font-size: 65px;
-  font-weight: 900;
+.contact {
+  padding: 35px 10px;
+}
+
+.contact-card i {
+  color: #4f46e5;
 }
