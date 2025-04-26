@@ -43,3 +43,14 @@
   font-size: 18px;
   font-weight: 700;
 }
+
+#load-more {
+  width: 100%;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #load-more {
+    display: block;
+  }
+}

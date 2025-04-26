@@ -17,6 +17,11 @@
   font-size: 32px;
   font-weight: 900;
 }
+
+.cta-button-group {
+  gap: 25px;
+}
+
 .cta-images {
   width: 50%;
   display: flex;
@@ -44,5 +49,13 @@
   }
   .cta-container {
     flex-direction: column;
+  }
+  .cta-button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-button-group > .btn-primary,
+  .cta-button-group > .btn-secondary {
+    width: 100%;
   }
 }

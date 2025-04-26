@@ -66,6 +66,7 @@ a:hover::before {
     height: 35px;
     width: 35px;
     cursor: pointer;
+    margin-bottom: 14px;
   }
   .mobile-menu img {
     width: 100%;

@@ -51,6 +51,14 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+
+.btn-primary:hover {
+  background-color: #190dfc;
+}
+.btn-secondary:hover {
+  background-color: rgba(223, 212, 212, 0.281);
+}
+
 .button-group {
   gap: 20px;
 }

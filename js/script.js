@@ -157,9 +157,24 @@ const createTestimonialCard = ({
   return div;
 };
 
-testimonialData.forEach((testimonial) => {
-  cardContainer.appendChild(createTestimonialCard(testimonial));
-});
+// load more button in mobile view
+if (window.innerWidth < 768) {
+  testimonialData.slice(0, 4).forEach((testimonial) => {
+    cardContainer.appendChild(createTestimonialCard(testimonial));
+  });
+
+  const loadMoreBtn = document.getElementById("load-more");
+  loadMoreBtn.addEventListener("click", () => {
+    testimonialData.slice(4).forEach((testimonial) => {
+      cardContainer.appendChild(createTestimonialCard(testimonial));
+    });
+    loadMoreBtn.style.display = "none";
+  });
+} else {
+  testimonialData.forEach((testimonial) => {
+    cardContainer.appendChild(createTestimonialCard(testimonial));
+  });
+}
 
 // Top Button Funtionality
 const scrollToTopButton = document.getElementById("scroll-to-top");
